@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Pagina Principal</title>
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="icon" type="image/png" href="assets/icon/ropa.webp">
+</head>
+
+<body>
+  <!--Menú-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Ropa Estilo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#quienes">Quiénes Somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contáctanos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="inicio" class="p-5"><br>
+    <div class="container">
+      <br>
+      <h2>Inicio</h2>
+      <strong>¡Bienvenido a Ropa Estilo, tu tienda de moda favorita!</strong >
+      <img src="assets/img/descuentos.avif" alt=""><br>
+    </div>
+  </section>
+
+  <section id="quienes" class="p-5 bg-light">
+    <div class="container">
+      <br>
+      <h2>Quiénes Somos</h2><br>
+      <h4>📌Misión</h4>
+      <p>"Ofrecer a nuestros clientes ropa de calidad, a la moda y a precios accesibles, brindando una experiencia de compra agradable y personalizada que refleje su estilo único y personalidad."</p>
+      <h4>👁Visión</h4>
+      <p>"Ser la tienda de ropa preferida en nuestra comunidad, reconocida por su innovación, variedad y compromiso con la satisfacción 
+        del cliente, expandiéndonos a nivel regional en los próximos cinco años."</p>
+      <h4>Valores</h4>
+      <ul>
+        <li>Calidad</li>
+        <li>Compromiso</li>
+        <li>Responsabilidad</li>
+        <li>Innovación</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="servicios" class="p-5">
+    <div class="container">
+      <br>
+      <h2>Servicios</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>📚 Catalogo en linea</h3>
+          <p>Ofrecemos las últimas tendencias en moda para tu estilo diario consulta nuestros catalogos.</p>
+          <img src="assets/img/catalogo.webp" alt="Venta al por menor" class="service-img">
+        </div>
+        <div class="service-card">
+          <h3>🎁 Ofertas y Promociones</h3>
+          <p>Precios especiales, descuentos, cupones o ventas especiales.</p>
+          <img src="assets/img/descuento.jpg" alt="Venta al por menor" class="service-img">
+        </div>
+        <div class="service-card">
+          <h3>👗 Asesoría de imagen</h3>
+          <p>Te ayudamos a encontrar tu mejor look con nuestros expertos en moda.</p>
+          <img src="assets/img/asesorias.jpg" alt="Venta al por menor" class="service-img">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="productos" class="p-5 bg-light">
+    <div class="container">
+      <br>
+      <h2>Alta de Productos</h2>
+      <form id="formProducto" class="row g-3 needs-validation" novalidate>
+
+        <div class="col-md-4">
+          <label for="txtIdProducto" class="form-label">ID Producto</label>
+          <input type="number" class="form-control" name="txtIdProducto" id="idProducto" min="1" value=""
+              required>
+          <div class="valid-feedback">Campo requerido.</div>
+        </div>
+
+        <!--Cajas de texto-->
+        <div class="col-md-6">
+          <label for="nombre" class="form-label">Nombre del producto</label>
+          <input type="text" class="form-control" id="nombre" required>
+          <div class="invalid-feedback">Campo requerido.</div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="precio" class="form-label">Precio ($)</label>
+          <input type="number" class="form-control" id="precio" min="0" required>
+          <div class="invalid-feedback">Campo requerido y sin valores negativos.</div>
+        </div>
+  
+        <!--Select-->
+        <div class="col-md-6">
+          <label for="categoria" class="form-label">Categoría</label>
+          <select id="categoria" class="form-select" required>
+            <option value="">Selecciona...</option>
+            <option value="Hombre">Hombre</option>
+            <option value="Mujer">Mujer</option>
+            <option value="Niños">Niños</option>
+          
+          </select>
+          <div class="invalid-feedback">Selecciona una categoría.</div>
+        </div>
+  
+        <!--Date-->
+        <div class="col-md-6">
+          <label for="fecha" class="form-label">Fecha de lanzamiento</label>
+          <input type="date" class="form-control" id="fecha" required>
+          <div class="invalid-feedback">Campo requerido.</div>
+        </div>
+  
+        <!--Range-->
+        <div class="col-md-12">
+          <label for="popularidad" class="form-label">Popularidad (⭐)</label>
+          <input type="range" class="form-range" id="popularidad" min="0" max="5" value="0">
+        </div>
+  
+        <!--checkbox-->
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="disponible">
+          <label class="form-check-label" for="disponible">Disponible</label>
+        </div>
+  
+        <!--radio-->
+        <div class="col-md-12">
+          <label class="form-label">Talla</label><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="talla" id="tallaXS" value="XS" required>
+            <label class="form-check-label" for="tallaXS">XS</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="talla" id="tallaS" value="S" >
+            <label class="form-check-label" for="tallaS">S</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="talla" id="tallaM" value="M">
+            <label class="form-check-label" for="tallaM">M</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="talla" id="tallaL" value="L">
+            <label class="form-check-label" for="tallaL">L</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="talla" id="tallaXL" value="XL">
+            <label class="form-check-label" for="tallaXL">XL</label>
+          </div>
+          <div class="invalid-feedback d-block" id="tallaError" style="display: none;">Selecciona una talla.</div>
+        </div>
+  
+        <!--Button-->
+        <div class="col-12">
+          <button type="submit" class="btn btn-success">Agregar Producto</button>
+        </div>
+      </form>
+   
+<!-- Tabla de productos -->
+<div class="mt-5" id="contenedorTabla" style="display: none;">
+  <h4>Lista de productos</h4>
+  <table class="table table-bordered table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th>ID Producto</th>
+        <th>Nombre del producto</th>
+        <th>Precio</th>
+        <th>Categoría</th>
+        <th>Fecha a lanzar</th>
+        <th>Popularidad</th>
+        <th>Disponible</th>
+        <th>Talla</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="tablaProductos">
+      <!-- Aquí se agregan los productos -->
+    </tbody>
+  </table>
+</div>
+
+    </div>
+</section>
+  
+  <script src="js/paginaP.js"></script>
+  <script src="js/buttons.js"></script>
+
+</body>
+</html>
+
+</body>
+</html>

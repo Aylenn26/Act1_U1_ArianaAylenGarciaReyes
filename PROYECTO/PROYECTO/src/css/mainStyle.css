@@ -1,0 +1,229 @@
+
+/*Estilos del menú*/
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+  }
+  a{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+
+  header {
+    background-color: #6c63ff;
+    color: white;
+    padding: 25px 30px;
+    border-bottom: 5px solid #574b90;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    background-color: #BC8F8F;
+  }
+
+  main {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+  }
+
+  section:hover {
+    transform: scale(1.01);
+  }
+
+  h2 {
+    color: #6c63ff;
+    margin-top: 0;
+  }
+
+  h3 {
+    color: #444;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  #inicio img {
+    max-width: 100%;
+    height:auto;
+    display: block;
+    margin: 0 auto; 
+    width: 90vw; 
+  }
+  
+  #inicio strong {
+    display: block;
+    text-align: center; 
+    margin-top: 15px; 
+    font-size: 1.8rem; 
+    color:#BC8F8F;
+  }
+
+
+/* Estilos de secciones */
+section {
+  padding: 5rem 0;
+  background-color:#E6E6FA;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  text-align: left;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+section p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: center;
+
+}
+
+#quienes {
+  background-color: #FFDAB9;
+}
+
+#quienes h4 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: #444;
+  font-family: 'Times New Roman', Times, serif;
+}
+#quienes h2{
+  text-align: center;
+}
+
+#quienes p {
+  text-align: left;
+}
+
+#quienes ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+#quienes li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+#quienes li::before {
+  content: '✔️';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Sección de Servicios */
+#servicios h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+.service-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #4682B4;
+}
+
+.service-card p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.service-img {
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+

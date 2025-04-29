@@ -1,0 +1,93 @@
+body {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1603400521630-9f2de124b33b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cm9wYSUyMGRlJTIwbW9kYXxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  border-radius: 15px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+h3 {
+  color: #333;
+  font-weight: 600;
+}
+
+.form-label {
+  color: #555;
+}
+
+.form-control {
+  border-radius: 30px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  color: #333;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.2);
+  border-color: #80bdff;
+}
+
+.btn-primary {
+  background-color: #DEB887;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color:#CD853F;
+}
+
+.link-footer {
+  color: #80bdff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.link-footer:hover {
+  text-decoration: underline;
+  color:#DEB887 ;
+}
+
+.footer-text {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.message {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}
+.mt-3 {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer-text {
+  margin-top: 30px;
+  font-size: 0.85rem;
+  color: #ccc;
+  text-align: center;
+}
+
